@@ -1,0 +1,48 @@
+.container{
+    width: 40%;
+    background-color: rgb(15, 161, 219);
+    height: 700px;
+    margin-left: 300px;
+}
+.calculator{
+  background-color: gray;
+  width: 80%;
+}
+.inputDisplay{
+    width: 48%;
+    height: 150px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+#buttons{
+    width:49% ;
+    margin-left: 150px;
+    background-color: rgb(28, 27, 27);
+}
+.btn{
+    padding: 28px;
+    background-color: rgb(28, 27, 27);
+    color: white;
+    font-size: 20px;
+}
+#clear{
+    font-size: 15px;
+    padding: 28px;
+}
+#zero{
+    font-size: 15px;
+    padding: 28px;  
+    margin-left: 2px;
+}
+#calculate{
+font-size: 15px;
+padding: 28px;  
+margin-left: 2px;
+}
+#plus{
+font-size: 14px;
+padding: 28px;  
+}
+#divide{
+padding: 29px;
+}
