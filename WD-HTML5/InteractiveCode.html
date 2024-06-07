@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q. Make sure each business logic is denoted with appropriate comments and
+        make your code interactive and represent clean and clear output on your
+        console screen</h2>
+
+
+    <h2>Sure, here's a simple HTML code snippet with JavaScript that demonstrates interactive business logic along with comments to denote each part:- </h2>
+            <h1>Interactive Business Logic</h1>
+            <p>Enter two numbers below to see their sum:</p>
+            <!-- Input fields for user to enter numbers -->
+            <input type="number" id="num1" placeholder="Enter number 1">
+            <input type="number" id="num2" placeholder="Enter number 2">
+            <!-- Button to trigger the calculation -->
+            <button onclick="calculateSum()">Calculate Sum</button>
+            <!-- Placeholder for displaying the result -->
+            <p id="result"></p>
+        
+            <script>
+                // Function to calculate the sum of two numbers
+                function calculateSum() {
+                    // Retrieve the values entered by the user
+                    var num1 = parseFloat(document.getElementById("num1").value);
+                    var num2 = parseFloat(document.getElementById("num2").value);
+        
+                    // Check if both values are valid numbers
+                    if (!isNaN(num1) && !isNaN(num2)) {
+                        // Calculate the sum
+                        var sum = num1 + num2;
+        
+                        // Display the result
+                        document.getElementById("result").innerText = "Sum: " + sum;
+                    } else {
+                        // Display error message if input is not a valid number
+                        document.getElementById("result").innerText = "Please enter valid numbers.";
+                    }
+                }
+            </script>
+
+<h3>This HTML file contains:-</h3>
+
+<p> Input fields for the user to enter two numbers. <br>
+A button to trigger the calculation. <br>
+A placeholder to display the result. <br>
+JavaScript logic to calculate the sum when the button is clicked. <br>
+Error handling to ensure that valid numbers are entered before performing the calculation. <br>
+</p>
+
+
+</body>
+</html>
