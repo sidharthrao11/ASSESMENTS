@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Image Gallery</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Additional CSS for styling */
+   .images{
+    width: 300px;
+    height: 220px;
+   }
+   .gallery-item{
+    margin: 25px;
+   }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/soh.jpeg" alt="Image 1" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/rc.jpg" alt="Image 2" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/clock.jpg" alt="Image 3" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/vc.jpg" alt="Image 4" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/street.jpg" alt="Image 5" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/sea.jpg" alt="Image 6" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/sunset.jpg" alt="Image 7" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/nycstreet.jpg" alt="Image 8" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="gallery-item">
+        <img class="images" src="../Framework-Bootstrap/img/sky.jpg" alt="Image 9" class="img-fluid">
+      </div>
+    </div>
+    <!-- Add more images here -->
+  </div>
+</div>
+
+
+<script>
+  // Get all the imges
+  const images = document.querySelectorAll('.images');
+
+  // Add mouseover event listener
+    images.forEach(item => {
+    item.addEventListener('mouseover', function() {
+      this.classList.add('active');
+    });
+
+    // Add mouseout event listener
+    item.addEventListener('mouseout', function() {
+      this.classList.remove('active');
+    });
+
+    // Add click event listener
+    item.addEventListener('click', function() {
+      // You can add your custom click event functionality here
+      console.log('Image clicked:', this.querySelector('img').alt);
+    });
+  });
+</script>
+</script>
+</body>
+</html>
