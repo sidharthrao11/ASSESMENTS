@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>
+        Write a function that takes an array of numbers as argument <br>
+        Convert the array to an object <br>
+        It should have a key for each unique value of the array <br>
+        The corresponding object value should be the number of times the key <br>
+        occurs within the array. <br>
+    </h3>
+
+    <img src="../JavaScript/Screenshot (7).png" alt="">
+    <p>(Check out the console for result.)</p>
+
+    <script>
+    function arrayToCountObject(arr) {
+        let countObject = {};
+        arr.forEach(num => {
+            countObject[num] = (countObject[num] || 0) + 1;
+        });
+        return countObject;
+    }
+    
+    // Example usage:
+    const numbers = [1, 2, 2, 3];
+    const countObject = arrayToCountObject(numbers);
+    console.log(countObject); 
+
+    const numberss = [9, 9, 9, 99];
+    const countObjectt = arrayToCountObject(numberss);
+    console.log(countObjectt); 
+
+    const numbersss = [4, 3, 2, 1];
+    const countObjecttt = arrayToCountObject(numbers);
+    console.log(countObjecttt); 
+     </script>
+
+
+</body>
+</html>
